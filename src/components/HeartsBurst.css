@@ -1,0 +1,83 @@
+.hearts-burst {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.heart {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0;
+  animation: heart-burst 1.2s forwards;
+}
+
+/* Generate different positions and directions for each heart */
+.heart-0 {
+  left: 10%;
+  animation-delay: 0s;
+}
+.heart-1 {
+  left: 20%;
+  animation-delay: 0.1s;
+}
+.heart-2 {
+  left: 30%;
+  animation-delay: 0.2s;
+}
+.heart-3 {
+  left: 40%;
+  animation-delay: 0.05s;
+}
+.heart-4 {
+  left: 50%;
+  animation-delay: 0.15s;
+}
+.heart-5 {
+  left: 60%;
+  animation-delay: 0.25s;
+}
+.heart-6 {
+  left: 70%;
+  animation-delay: 0.05s;
+}
+.heart-7 {
+  left: 80%;
+  animation-delay: 0.18s;
+}
+.heart-8 {
+  left: 15%;
+  animation-delay: 0.22s;
+}
+.heart-9 {
+  left: 85%;
+  animation-delay: 0.12s;
+}
+.heart-10 {
+  left: 35%;
+  animation-delay: 0.28s;
+}
+.heart-11 {
+  left: 65%;
+  animation-delay: 0.08s;
+}
+
+@keyframes heart-burst {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.7) rotate(-10deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-90px) scale(1.2) rotate(10deg);
+  }
+}
